@@ -60,6 +60,24 @@ npx skills add marvinjwendt/skills -s unslop -g
 Click a name to read the whole file.
 
 <!-- skills:start -->
+<table>
+<tr><th>Skill</th><th>What it does</th></tr>
+<tr><td><a href="skills/commit"><code>commit</code></a></td><td>Commit the current changes with a message written in the repo's own style.</td></tr>
+<tr><td><a href="skills/handoff"><code>handoff</code></a></td><td>Write a handoff document that summarises the current conversation, so a fresh agent can continue the work.</td></tr>
+<tr><td><a href="skills/how"><code>how</code></a></td><td>Use for "how does X work", code walkthroughs before changing something, and placement / ownership / layering questions ("where should this live", "which package owns this", "is this the right layer").</td></tr>
+<tr><td><a href="skills/investigate"><code>investigate</code></a></td><td>Find out why something failed or behaves the way it does, using read-only commands only, and report the cause back in chat.</td></tr>
+<tr><td><a href="skills/pull"><code>pull</code></a></td><td>Bring the current branch up to date by merging its upstream, keeping uncommitted work and both sides of every conflict.</td></tr>
+<tr><td><a href="skills/push"><code>push</code></a></td><td>Push the current branch to its remote, committing first when the working tree is dirty.</td></tr>
+<tr><td><a href="skills/quick-html"><code>quick-html</code></a></td><td>Build a single self-contained HTML file with Tailwind and CDN imports, no build step.</td></tr>
+<tr><td><a href="skills/set-up-agents"><code>set-up-agents</code></a></td><td>Set up a repository's whole agent configuration in one go, instructions and skills.</td></tr>
+<tr><td><a href="skills/set-up-agents-md"><code>set-up-agents-md</code></a></td><td>Make `AGENTS.md` the single source of truth for a repository's agent instructions and symlink every agent's own instruction file to it.</td></tr>
+<tr><td><a href="skills/set-up-skills"><code>set-up-skills</code></a></td><td>Wire a repository's skills so `.agents/skills/` is the single source of truth and every agent reads it through a symlink.</td></tr>
+<tr><td><a href="skills/shutdown"><code>shutdown</code></a></td><td>Shut the computer down once every other task in the session is finished.</td></tr>
+<tr><td><a href="skills/technical-writing"><code>technical-writing</code></a></td><td>Layered technical-writing standard: text size and scope, Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax.</td></tr>
+<tr><td><a href="skills/unslop"><code>unslop</code></a></td><td>Cut AI tells from prose and give it a human voice.</td></tr>
+<tr><td><a href="skills/what"><code>what</code></a></td><td>Re-explain your last message, simpler and with more detail.</td></tr>
+<tr><td><a href="skills/writing-comments"><code>writing-comments</code></a></td><td>How code comments get written: what earns one, how it reads, the sediment to keep out, and the passes it goes through.</td></tr>
+</table>
 <!-- skills:end -->
 
 <!-- forked-skills:start -->
