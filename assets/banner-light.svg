@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="skills">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f1ec"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c15f3c"/>
+      <stop offset="1" stop-color="#e8a87c"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1f2328" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">
+    <text x="96" y="168" font-size="96" font-weight="700" fill="#1f2328">skills<tspan fill="url(#accent)">/</tspan></text>
+    <text x="100" y="222" font-size="26" fill="#59636e">SKILL.md files for coding agents</text>
+    <rect x="96" y="256" width="560" height="52" rx="10" fill="#1f2328" fill-opacity="0.04" stroke="#1f2328" stroke-opacity="0.12"/>
+    <text x="118" y="290" font-size="22" fill="#59636e"><tspan fill="url(#accent)">$</tspan> npx skills add <tspan fill="#1f2328">marvinjwendt/skills</tspan></text>
+  </g>
+  <g transform="translate(900 60)" fill="none" stroke-width="2">
+    <rect x="0" y="0" width="200" height="56" rx="10" stroke="#c15f3c" stroke-opacity="0.9"/>
+    <rect x="40" y="88" width="200" height="56" rx="10" stroke="#e8a87c" stroke-opacity="0.6"/>
+    <rect x="80" y="176" width="200" height="56" rx="10" stroke="#1f2328" stroke-opacity="0.3"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" stroke="none">
+      <text x="20" y="34" fill="#1f2328">commit</text>
+      <text x="60" y="122" fill="#3d444d">investigate</text>
+      <text x="100" y="210" fill="#59636e">unslop</text>
+    </g>
+  </g>
+</svg>
