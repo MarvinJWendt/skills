@@ -63,6 +63,7 @@ Click a name to read the whole file.
 <table>
 <tr><th>Skill</th><th>What it does</th></tr>
 <tr><td><a href="skills/commit"><code>commit</code></a></td><td>Commit the current changes with a message written in the repo's own style.</td></tr>
+<tr><td><a href="skills/grill-me"><code>grill-me</code></a></td><td>Grill the user relentlessly about a plan, decision, or idea until both sides share one understanding of it.</td></tr>
 <tr><td><a href="skills/handoff"><code>handoff</code></a></td><td>Write a handoff document that summarises the current conversation, so a fresh agent can continue the work.</td></tr>
 <tr><td><a href="skills/how"><code>how</code></a></td><td>Use for "how does X work", code walkthroughs before changing something, and placement / ownership / layering questions ("where should this live", "which package owns this", "is this the right layer").</td></tr>
 <tr><td><a href="skills/investigate"><code>investigate</code></a></td><td>Find out why something failed or behaves the way it does, using read-only commands only, and report the cause back in chat.</td></tr>
