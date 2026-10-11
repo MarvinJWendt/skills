@@ -67,6 +67,7 @@ Click a name to read the whole file.
 <tr><td><a href="skills/handoff"><code>handoff</code></a></td><td>Write a handoff document that summarises the current conversation, so a fresh agent can continue the work.</td></tr>
 <tr><td><a href="skills/how"><code>how</code></a></td><td>Use for "how does X work", code walkthroughs before changing something, and placement / ownership / layering questions ("where should this live", "which package owns this", "is this the right layer").</td></tr>
 <tr><td><a href="skills/investigate"><code>investigate</code></a></td><td>Find out why something failed or behaves the way it does, using read-only commands only, and report the cause back in chat.</td></tr>
+<tr><td><a href="skills/orchestrate"><code>orchestrate</code></a></td><td>Act as team lead for a batch of parallel tasks, delegate each to a named subagent, then integrate their work and report back.</td></tr>
 <tr><td><a href="skills/pull"><code>pull</code></a></td><td>Bring the current branch up to date by merging its upstream, keeping uncommitted work and both sides of every conflict.</td></tr>
 <tr><td><a href="skills/push"><code>push</code></a></td><td>Push the current branch to its remote, committing first when the working tree is dirty.</td></tr>
 <tr><td><a href="skills/quick-html"><code>quick-html</code></a></td><td>Build a single self-contained HTML file with Tailwind and CDN imports, no build step.</td></tr>
