@@ -60,7 +60,7 @@ npx skills add marvinjwendt/skills -s unslop -g
 Each skill is one folder under [`skills/`](skills). The command below a skill installs just that one, for every project.
 
 <!-- skills:start -->
-[commit](#commit) · [grill-me](#grill-me) · [handoff](#handoff) · [how](#how) · [investigate](#investigate) · [orchestrate](#orchestrate) · [pull](#pull) · [push](#push) · [quick-html](#quick-html) · [set-up-agents](#set-up-agents) · [set-up-agents-md](#set-up-agents-md) · [set-up-skills](#set-up-skills) · [shutdown](#shutdown) · [technical-writing](#technical-writing) · [unslop](#unslop) · [what](#what) · [writing-comments](#writing-comments)
+[commit](#commit) · [finish](#finish) · [grill-me](#grill-me) · [handoff](#handoff) · [how](#how) · [investigate](#investigate) · [orchestrate](#orchestrate) · [pull](#pull) · [push](#push) · [quick-html](#quick-html) · [set-up-agents](#set-up-agents) · [set-up-agents-md](#set-up-agents-md) · [set-up-skills](#set-up-skills) · [shutdown](#shutdown) · [technical-writing](#technical-writing) · [unslop](#unslop) · [what](#what) · [writing-comments](#writing-comments)
 
 ### commit
 
@@ -70,6 +70,16 @@ Commit the current changes with a message written in the repo's own style. Run i
 
 ```sh
 npx skills add marvinjwendt/skills -s commit -g
+```
+
+### finish
+
+<sub>[`skills/finish/SKILL.md`](https://github.com/MarvinJWendt/skills/blob/HEAD/skills/finish/SKILL.md)</sub>
+
+Carry the work to the end while the user is AFK: decide every open question yourself, verify, and leave a report with a decision log. Use on /finish, when the user says they are away or asleep and expects the work done on return, and when another skill hands off unattended work.
+
+```sh
+npx skills add marvinjwendt/skills -s finish -g
 ```
 
 ### grill-me

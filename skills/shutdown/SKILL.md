@@ -6,10 +6,8 @@ disable-model-invocation: true
 
 The user is asleep and not coming back to this session tonight. The shutdown is the last action of the session, queued behind everything else they asked for.
 
-1. Finish every other task. Push only when the user asked for it, for example with a queued `/push`. Otherwise finished work stays local. A task you cannot finish ends as a written-up blocker, not a question: nobody is awake to answer one.
-2. Wait for background work you started (subagents, workflows, background commands) to complete. Nothing still running gets killed by the shutdown.
-3. Write the final report now, before the shutdown: what got done, what is blocked and why, what the user should look at first. It is the first thing they read in the morning.
-4. Shut down with the command for this host:
+1. Run the `finish` skill over every other task in the session, through its final report. It covers the unattended work: decisions, git, blockers, waiting for background jobs, and the report the user reads in the morning.
+2. Shut down with the command for this host:
 
 | Host | Detect | Command |
 |---|---|---|
