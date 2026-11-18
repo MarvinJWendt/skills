@@ -60,7 +60,7 @@ npx skills add marvinjwendt/skills -s unslop -g
 Each skill is one folder under [`skills/`](skills). The command below a skill installs just that one, for every project.
 
 <!-- skills:start -->
-[commit](#commit) · [finish](#finish) · [grill-me](#grill-me) · [handoff](#handoff) · [how](#how) · [investigate](#investigate) · [orchestrate](#orchestrate) · [pull](#pull) · [push](#push) · [quick-html](#quick-html) · [set-up-agents](#set-up-agents) · [set-up-agents-md](#set-up-agents-md) · [set-up-skills](#set-up-skills) · [shutdown](#shutdown) · [technical-writing](#technical-writing) · [unslop](#unslop) · [what](#what) · [writing-comments](#writing-comments)
+[commit](#commit) · [finish](#finish) · [full](#full) · [grill-me](#grill-me) · [handoff](#handoff) · [how](#how) · [investigate](#investigate) · [orchestrate](#orchestrate) · [pull](#pull) · [push](#push) · [quick-html](#quick-html) · [set-up-agents](#set-up-agents) · [set-up-agents-md](#set-up-agents-md) · [set-up-skills](#set-up-skills) · [shutdown](#shutdown) · [technical-writing](#technical-writing) · [unslop](#unslop) · [what](#what) · [writing-comments](#writing-comments)
 
 ### commit
 
@@ -80,6 +80,16 @@ Carry the work to the end while the user is AFK: decide every open question your
 
 ```sh
 npx skills add marvinjwendt/skills -s finish -g
+```
+
+### full
+
+<sub>[`skills/full/SKILL.md`](https://github.com/MarvinJWendt/skills/blob/HEAD/skills/full/SKILL.md)</sub>
+
+Implement a task completely and correctly without check-ins, to the repo's quality bar and the language's best practice, then push. Use on /full and when the user wants the whole job done autonomously rather than a quick version, a plan, or a question back.
+
+```sh
+npx skills add marvinjwendt/skills -s full -g
 ```
 
 ### grill-me
