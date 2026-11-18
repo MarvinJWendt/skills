@@ -57,7 +57,7 @@ npx skills add marvinjwendt/skills -s unslop -g
 
 ## Skills
 
-Each skill is one folder under [`skills/`](skills). The command below a skill installs just that one, for every project.
+Each skill is one folder under [`skills/`](skills). The command below a skill installs that one for every project, together with the skills it requires.
 
 <!-- skills:start -->
 [commit](#commit) · [finish](#finish) · [full](#full) · [grill-me](#grill-me) · [handoff](#handoff) · [how](#how) · [investigate](#investigate) · [orchestrate](#orchestrate) · [pull](#pull) · [push](#push) · [quick-html](#quick-html) · [set-up-agents](#set-up-agents) · [set-up-agents-md](#set-up-agents-md) · [set-up-skills](#set-up-skills) · [shutdown](#shutdown) · [technical-writing](#technical-writing) · [unslop](#unslop) · [what](#what) · [writing-comments](#writing-comments)
@@ -78,8 +78,10 @@ npx skills add marvinjwendt/skills -s commit -g
 
 Carry the work to the end while the user is AFK: decide every open question yourself, verify, and leave a report with a decision log. Use on /finish, when the user says they are away or asleep and expects the work done on return, and when another skill hands off unattended work.
 
+Requires [commit](#commit) and [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s finish -g
+npx skills add marvinjwendt/skills -s finish commit unslop -g
 ```
 
 ### full
@@ -88,8 +90,10 @@ npx skills add marvinjwendt/skills -s finish -g
 
 Implement a task completely and correctly without check-ins, to the repo's quality bar and the language's best practice, then push. Use on /full and when the user wants the whole job done autonomously rather than a quick version, a plan, or a question back.
 
+Requires [push](#push), and through it [commit](#commit).
+
 ```sh
-npx skills add marvinjwendt/skills -s full -g
+npx skills add marvinjwendt/skills -s full push commit -g
 ```
 
 ### grill-me
@@ -128,8 +132,10 @@ npx skills add marvinjwendt/skills -s how -g
 
 Find out why something failed or behaves the way it does, using read-only commands only, and report the cause back in chat.
 
+Requires [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s investigate -g
+npx skills add marvinjwendt/skills -s investigate unslop -g
 ```
 
 ### orchestrate
@@ -158,8 +164,10 @@ npx skills add marvinjwendt/skills -s pull -g
 
 Push the current branch to its remote, committing first when the working tree is dirty. Run it on the user's explicit request or /push, never because a task just finished.
 
+Requires [commit](#commit).
+
 ```sh
-npx skills add marvinjwendt/skills -s push -g
+npx skills add marvinjwendt/skills -s push commit -g
 ```
 
 ### quick-html
@@ -168,8 +176,10 @@ npx skills add marvinjwendt/skills -s push -g
 
 Build a single self-contained HTML file with Tailwind and CDN imports, no build step. Reports, local experiment frontends, and debug UIs served by a backend.
 
+Requires [unslop](#unslop) and [technical-writing](#technical-writing).
+
 ```sh
-npx skills add marvinjwendt/skills -s quick-html -g
+npx skills add marvinjwendt/skills -s quick-html unslop technical-writing -g
 ```
 
 ### set-up-agents
@@ -178,8 +188,10 @@ npx skills add marvinjwendt/skills -s quick-html -g
 
 Set up a repository's whole agent configuration in one go, instructions and skills. Use when asked to set up agents in a repo, to bootstrap a fresh project for agent work, or when it is unclear which parts of the setup a repo is missing.
 
+Requires [set-up-agents-md](#set-up-agents-md) and [set-up-skills](#set-up-skills).
+
 ```sh
-npx skills add marvinjwendt/skills -s set-up-agents -g
+npx skills add marvinjwendt/skills -s set-up-agents set-up-agents-md set-up-skills -g
 ```
 
 ### set-up-agents-md
@@ -188,8 +200,10 @@ npx skills add marvinjwendt/skills -s set-up-agents -g
 
 Make `AGENTS.md` the single source of truth for a repository's agent instructions and symlink every agent's own instruction file to it. Use when a repo has no agent instructions yet, when they live in `CLAUDE.md` as a real file, or when several instruction files have drifted apart.
 
+Requires [set-up-skills](#set-up-skills).
+
 ```sh
-npx skills add marvinjwendt/skills -s set-up-agents-md -g
+npx skills add marvinjwendt/skills -s set-up-agents-md set-up-skills -g
 ```
 
 ### set-up-skills
@@ -208,8 +222,10 @@ npx skills add marvinjwendt/skills -s set-up-skills -g
 
 Shut the computer down once every other task in the session is finished. For long unattended sessions while the user sleeps.
 
+Requires [finish](#finish), and through it [commit](#commit) and [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s shutdown -g
+npx skills add marvinjwendt/skills -s shutdown finish commit unslop -g
 ```
 
 ### technical-writing
@@ -218,8 +234,10 @@ npx skills add marvinjwendt/skills -s shutdown -g
 
 Layered technical-writing standard: text size and scope, Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing and when writing or reviewing any technical English text: PR descriptions, docs, readmes, guides, RFCs and design docs, release notes, CLI help, error strings, doc comments.
 
+Requires [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s technical-writing -g
+npx skills add marvinjwendt/skills -s technical-writing unslop -g
 ```
 
 ### unslop
@@ -238,8 +256,10 @@ npx skills add marvinjwendt/skills -s unslop -g
 
 Re-explain your last message, simpler and with more detail. Type it again to go a level deeper.
 
+Requires [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s what -g
+npx skills add marvinjwendt/skills -s what unslop -g
 ```
 
 ### writing-comments
@@ -248,8 +268,10 @@ npx skills add marvinjwendt/skills -s what -g
 
 How code comments get written: what earns one, how it reads, the sediment to keep out, and the passes it goes through. Load before you write or change any comment in a source file, including doc comments (godoc, JSDoc, docstrings), file headers and TODO markers; when porting, renaming or retiring a predecessor, where comments turn into changelogs; when auditing the comments already in a file; and whenever you weigh whether something needs a comment at all.
 
+Requires [technical-writing](#technical-writing) and [unslop](#unslop).
+
 ```sh
-npx skills add marvinjwendt/skills -s writing-comments -g
+npx skills add marvinjwendt/skills -s writing-comments technical-writing unslop -g
 ```
 <!-- skills:end -->
 

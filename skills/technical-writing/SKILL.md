@@ -1,6 +1,8 @@
 ---
 name: technical-writing
 description: "Layered technical-writing standard: text size and scope, Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing and when writing or reviewing any technical English text: PR descriptions, docs, readmes, guides, RFCs and design docs, release notes, CLI help, error strings, doc comments."
+metadata:
+  requires: unslop
 ---
 
 # Technical writing

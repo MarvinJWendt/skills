@@ -2,6 +2,8 @@
 name: shutdown
 description: Shut the computer down once every other task in the session is finished. For long unattended sessions while the user sleeps.
 disable-model-invocation: true
+metadata:
+  requires: finish
 ---
 
 The user is asleep and not coming back to this session tonight. The shutdown is the last action of the session, queued behind everything else they asked for.

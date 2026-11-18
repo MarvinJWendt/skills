@@ -2,6 +2,8 @@
 name: investigate
 description: Find out why something failed or behaves the way it does, using read-only commands only, and report the cause back in chat.
 disable-model-invocation: true
+metadata:
+  requires: unslop
 ---
 
 # Investigate

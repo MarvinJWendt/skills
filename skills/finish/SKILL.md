@@ -1,6 +1,8 @@
 ---
 name: finish
 description: "Carry the work to the end while the user is AFK: decide every open question yourself, verify, and leave a report with a decision log. Use on /finish, when the user says they are away or asleep and expects the work done on return, and when another skill hands off unattended work."
+metadata:
+  requires: commit unslop
 ---
 
 # Finish

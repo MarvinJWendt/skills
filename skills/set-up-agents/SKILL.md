@@ -1,6 +1,8 @@
 ---
 name: set-up-agents
 description: Set up a repository's whole agent configuration in one go, instructions and skills. Use when asked to set up agents in a repo, to bootstrap a fresh project for agent work, or when it is unclear which parts of the setup a repo is missing.
+metadata:
+  requires: set-up-agents-md set-up-skills
 ---
 
 # set-up-agents

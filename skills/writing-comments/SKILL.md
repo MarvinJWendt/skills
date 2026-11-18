@@ -1,6 +1,8 @@
 ---
 name: writing-comments
 description: "How code comments get written: what earns one, how it reads, the sediment to keep out, and the passes it goes through. Load before you write or change any comment in a source file, including doc comments (godoc, JSDoc, docstrings), file headers and TODO markers; when porting, renaming or retiring a predecessor, where comments turn into changelogs; when auditing the comments already in a file; and whenever you weigh whether something needs a comment at all."
+metadata:
+  requires: technical-writing unslop
 ---
 
 # Writing comments

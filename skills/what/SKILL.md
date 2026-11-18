@@ -2,6 +2,8 @@
 name: what
 description: Re-explain your last message, simpler and with more detail. Type it again to go a level deeper.
 disable-model-invocation: true
+metadata:
+  requires: unslop
 ---
 
 # What

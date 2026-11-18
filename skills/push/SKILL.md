@@ -1,6 +1,8 @@
 ---
 name: push
 description: Push the current branch to its remote, committing first when the working tree is dirty. Run it on the user's explicit request or /push, never because a task just finished.
+metadata:
+  requires: commit
 ---
 
 The user asking for the push is the approval. Do not ask for it again at any point below.

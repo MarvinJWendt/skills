@@ -1,6 +1,8 @@
 ---
 name: full
 description: "Implement a task completely and correctly without check-ins, to the repo's quality bar and the language's best practice, then push. Use on /full and when the user wants the whole job done autonomously rather than a quick version, a plan, or a question back."
+metadata:
+  requires: push
 ---
 
 # Full

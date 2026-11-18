@@ -2,6 +2,8 @@
 name: quick-html
 description: Build a single self-contained HTML file with Tailwind and CDN imports, no build step. Reports, local experiment frontends, and debug UIs served by a backend.
 disable-model-invocation: true
+metadata:
+  requires: unslop technical-writing
 ---
 
 # quick-html
