@@ -1,8 +1,6 @@
 ---
 name: set-up-agents-md
 description: Make `AGENTS.md` the single source of truth for a repository's agent instructions and symlink every agent's own instruction file to it. Use when a repo has no agent instructions yet, when they live in `CLAUDE.md` as a real file, or when several instruction files have drifted apart.
-metadata:
-  requires: set-up-skills
 ---
 
 # set-up-agents-md
@@ -41,4 +39,4 @@ Finish by naming which files merged and which are now symlinks.
 
 ## Writing the file from scratch
 
-Read the repo first, enough to say what a new agent needs to know: build and test commands, the layout, the conventions the code follows but does not state. `writing-for-agents` owns how to write it. Keep it to what nearly every task in this repo needs, and let focused topics become skills through `set-up-skills`.
+Read the repo first, enough to say what a new agent needs to know: build and test commands, the layout, the conventions the code follows but does not state. `writing-for-agents` owns how to write it. Keep it to what nearly every task in this repo needs; a focused topic belongs in a skill instead.

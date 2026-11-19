@@ -200,10 +200,8 @@ npx skills add marvinjwendt/skills -s set-up-agents set-up-agents-md set-up-skil
 
 Make `AGENTS.md` the single source of truth for a repository's agent instructions and symlink every agent's own instruction file to it. Use when a repo has no agent instructions yet, when they live in `CLAUDE.md` as a real file, or when several instruction files have drifted apart.
 
-Requires [set-up-skills](#set-up-skills).
-
 ```sh
-npx skills add marvinjwendt/skills -s set-up-agents-md set-up-skills -g
+npx skills add marvinjwendt/skills -s set-up-agents-md -g
 ```
 
 ### set-up-skills
